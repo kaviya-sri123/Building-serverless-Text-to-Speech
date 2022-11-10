@@ -46,9 +46,18 @@ AWS Polly synthesizeSpeech API requires the text input and the voice id to conve
 Here, we use the voice of “Joanna” to speak the text that is passed from the frontend.
 
 Now, deploy the backend API and the Lambda function
+
 sls deploy
 
+# Frontend Angular App
+In order to test our backend, we need a frontend that makes speak request with user inputted text. 
+So let’s create an angular application.
 
+ng g s API
+
+Add the following code to the api.service.ts file.
+It will create speak function that call the lambda function with the selected voice and 
+the inserted text by the user.
 
 
 
