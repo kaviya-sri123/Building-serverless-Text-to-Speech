@@ -5,6 +5,7 @@ Building Serverless Text - to - Speech application using Amazon Polly and Amazon
 Install serverless framework by with npm and create a new nodejs project/service called backend.
 
 npm install serverless -g 
+
 serverless create --template aws-nodejs --path backend
 
 Now replace to serverless.yml file with following code, that creates a lambda function called “speak”.
@@ -29,6 +30,23 @@ provider:
    region: us-east-1 
    
    role: arn:aws:iam::885121665536:role/talking-app-role
+   
+#  “Speak” Lambda Function
+Speak Lambda function does three main tasks.
+
+Call AWS Polly synthesizeSpeech API and get the audio stream (mp3 format) for text that user entered
+Save the above audio stream in the S3 bucket
+Get a signed URL for the saved mp3 file in the S3 and send it back to the frontend application
+First of all, let’s install the required npm modules inside the backend folder. 
+
+npm install aws-sdk 
+
+npm install uuid
+AWS Polly synthesizeSpeech API requires the text input and the voice id to convert the text into speech. 
+Here, we use the voice of “Joanna” to speak the text that is passed from the frontend.
+
+Now, deploy the backend API and the Lambda function
+sls deploy
 
 
 
