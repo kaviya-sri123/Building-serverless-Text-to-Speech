@@ -23,6 +23,7 @@ Copy the ARN of the IAM role and add it under the provider section of the server
 
 provider:
    name: aws
+   
    runtime: nodejs8.10
    region: us-east-1 
    role: arn:aws:iam::885121665536:role/talking-app-role
