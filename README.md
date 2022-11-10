@@ -25,7 +25,9 @@ provider:
    name: aws
    
    runtime: nodejs8.10
+   
    region: us-east-1 
+   
    role: arn:aws:iam::885121665536:role/talking-app-role
 
 
