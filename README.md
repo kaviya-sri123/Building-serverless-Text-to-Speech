@@ -72,7 +72,7 @@ provider:
    
    region: us-east-1 
    
-   role: arn:aws:iam::885121665536:role/talking-app-role
+   role: arn:aws:iam::885121665536: role/talking-app-role
    
 #  “Speak” Lambda Function
 Speak Lambda function does three main tasks.
