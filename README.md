@@ -78,7 +78,9 @@ provider:
 Speak Lambda function does three main tasks.
 
 Call AWS Polly synthesizeSpeech API and get the audio stream (mp3 format) for text that user entered
+
 Save the above audio stream in the S3 bucket
+
 Get a signed URL for the saved mp3 file in the S3 and send it back to the frontend application
 First of all, let’s install the required npm modules inside the backend folder. 
 
