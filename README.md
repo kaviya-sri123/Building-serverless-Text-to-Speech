@@ -87,6 +87,7 @@ First of all, let’s install the required npm modules inside the backend folder
 npm install aws-sdk 
 
 npm install uuid
+
 AWS Polly synthesizeSpeech API requires the text input and the voice id to convert the text into speech. 
 Here, we use the voice of “Joanna” to speak the text that is passed from the frontend.
 
