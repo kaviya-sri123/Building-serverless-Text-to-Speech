@@ -94,30 +94,6 @@ Now, deploy the backend API and the Lambda function
 
 sls deploy
 
-# Frontend Angular App
-In order to test our backend, we need a frontend that makes speak request with user inputted text. 
-So let’s create an angular application.
-
-ng g s API
-
-Add the following code to the api.service.ts file.
-It will create speak function that call the lambda function with the selected voice and 
-the inserted text by the user.
-
-Add the following code to the api.service.ts file. 
-It will create speak function that call the lambda function with the selected voice and 
-the inserted text by the user.
-
-Since we are using, ngModel in the app.
-component.html we need to import the FormsModule in the app.module.ts file. 
-Goto app.module.ts file and replace the content with,
-
-# Running the Application
-Now that our backend and the frontend are ready, let’s play with our app.
-
-Go to the client directory and run the angular app locally,
-
-ng serve
 
 
 
